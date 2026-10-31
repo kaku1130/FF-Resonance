@@ -24,7 +24,7 @@ if (window.__FFR_INITIAL_STATE__) {
 })();
 
 }
-</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FF Resonance｜Characters &amp; Visions</title><style>:root{color-scheme:dark}*{box-sizing:border-box}html,body{height:100%;margin:0;background:#090d17;color:#e6e8ee;font:16px/1.5 Arial,"Microsoft JhengHei",sans-serif}body{display:flex;flex-direction:column;overflow:hidden}.page-nav{display:flex;align-items:center;gap:20px;padding:12px 20px;border-bottom:1px solid #3c414d;background:#171c27;flex-shrink:0}.brand{font-size:14px;font-weight:700;letter-spacing:1px;color:#b9c2d2}.page-label{font-size:16px}.github-link{display:inline-flex;align-items:center;gap:7px;margin-left:auto;color:#e6e8ee;text-decoration:none;white-space:nowrap;font-size:14px;font-weight:600}.github-link:hover{color:#fff;text-decoration:underline}.github-link:focus-visible{outline:2px solid #a9c7ff;outline-offset:5px;border-radius:3px}.github-link svg{width:22px;height:22px;flex-shrink:0}@media(max-width:480px){.page-nav{gap:10px;padding:10px 12px}.brand{font-size:11px}.page-label{font-size:12px}.github-link{font-size:12px;gap:5px}}.page-content{flex:1;min-height:0}.page-frame{display:block;width:100%;height:100%;border:0}.nav-links{display:flex;align-items:center;gap:20px;margin-left:auto;flex-shrink:0}.nav-links .github-link{margin-left:0}.game8-link img{display:block;width:22px;height:22px;object-fit:contain;border-radius:4px;flex-shrink:0}@media(max-width:600px){.page-nav{flex-wrap:wrap;gap:8px 12px;padding:10px 12px}.nav-links{gap:14px}.page-label{font-size:13px}.brand{font-size:12px}}.page-nav>.game8-link{margin-left:0;flex-shrink:0}</style><style>
+</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FF Resonance｜Characters &amp; Visions</title><style>:root{color-scheme:dark}*{box-sizing:border-box}html,body{height:100%;margin:0;background:#090d17;color:#e6e8ee;font:16px/1.5 Arial,"Microsoft JhengHei",sans-serif}body{display:flex;flex-direction:column;overflow:hidden}.page-nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:20px;padding:12px 20px;border-bottom:1px solid #3c414d;background:#171c27;flex-shrink:0}.brand{font-size:14px;font-weight:700;letter-spacing:1px;color:#b9c2d2}.page-label{font-size:16px}.github-link{display:inline-flex;align-items:center;gap:7px;margin-left:auto;color:#e6e8ee;text-decoration:none;white-space:nowrap;font-size:14px;font-weight:600}.github-link:hover{color:#fff;text-decoration:underline}.github-link:focus-visible{outline:2px solid #a9c7ff;outline-offset:5px;border-radius:3px}.github-link svg{width:22px;height:22px;flex-shrink:0}@media(max-width:480px){.page-nav{gap:10px;padding:10px 12px}.brand{font-size:11px}.page-label{font-size:12px}.github-link{font-size:12px;gap:5px}}.page-content{flex:1;min-height:0}.page-frame{display:block;width:100%;height:100%;border:0}.nav-links{display:flex;align-items:center;gap:20px;margin-left:auto;flex-shrink:0}.nav-links .github-link{margin-left:0}.game8-link img{display:block;width:22px;height:22px;object-fit:contain;border-radius:4px;flex-shrink:0}@media(max-width:600px){.page-nav{flex-wrap:wrap;gap:8px 12px;padding:10px 12px}.nav-links{gap:14px}.page-label{font-size:13px}.brand{font-size:12px}}.page-nav>.game8-link{margin-left:0;flex-shrink:0}</style><style>
 .mobile-roster-toggle,.mobile-roster-drawer { display:none; }
 @media (max-width: 600px) {
   .mobile-roster-toggle { display:block; position:fixed; left:8px; top:8px; z-index:60; width:44px; min-height:44px; padding:8px; border:1px solid #82b7ff; border-radius:6px; background:#203657; color:#fff; font:24px/1 Arial,"Microsoft JhengHei",sans-serif; cursor:pointer; }
@@ -36,7 +36,7 @@ if (window.__FFR_INITIAL_STATE__) {
   .visions-layout { --mr-number-width:34px; --mr-rank-width:44px; --mr-tag-width:48px; padding-top:52px; }
   body:has(> .page-nav) { height:auto; min-height:100%; overflow:auto; }
   body:has(> .page-nav) .page-content { flex:none; }
-  body:has(> .page-nav) .page-nav { position:static; }
+  body:has(> .page-nav) .page-nav { position:sticky; top:0; z-index:100; }
   body:has(> .page-nav) .page-frame { height:100dvh; }
 
   .visions-layout > .roster-stack { max-height:calc(var(--mobile-viewport-height, 100dvh) * .38); }
@@ -858,7 +858,7 @@ body{padding:0!important}main{display:block!important;width:100%!important;max-w
   .visions-layout { --mr-number-width:34px; --mr-rank-width:44px; --mr-tag-width:48px; padding-top:52px; }
   body:has(&amp;gt; .page-nav) { height:auto; min-height:100%; overflow:auto; }
   body:has(&amp;gt; .page-nav) .page-content { flex:none; }
-  body:has(&amp;gt; .page-nav) .page-nav { position:static; }
+  body:has(&amp;gt; .page-nav) .page-nav { position:sticky; top:0; z-index:100; }
   body:has(&amp;gt; .page-nav) .page-frame { height:100dvh; }
 
   .visions-layout &amp;gt; .roster-stack { max-height:calc(var(--mobile-viewport-height, 100dvh) * .38); }
@@ -4346,13 +4346,13 @@ function emphasizeVision(id, alignMenu = true) {
   scroller = scroller.parentElement;
  }
 }
-function jumpToVision(id) {
+function jumpToVision(id, alignMenu = true) {
  const row = [...visionRows, ...visionSkills].find(item =&gt; item.dataset.vision === id &amp;&amp; !item.hidden);
  if (!row) return;
  visionJumping = true;
  const top = row.getBoundingClientRect().top - visionPane.getBoundingClientRect().top - visionPane.clientTop;
  visionPane.scrollTop += top - visionTabs.offsetHeight;
- emphasizeVision(id);
+ emphasizeVision(id, alignMenu);
  requestAnimationFrame(() =&gt; { visionJumping = false; });
 }
 function selectVision(id) {
@@ -4361,7 +4361,7 @@ function selectVision(id) {
  visionPane.hidden = false;
  document.querySelectorAll('.merged-character-option').forEach(button =&gt; button.setAttribute('aria-pressed', 'false'));
  visionTabs.dispatchEvent(new Event('visionviewchange'));
- jumpToVision(id);
+ jumpToVision(id, false);
  hideTooltip();
 }
 visionOptions.forEach(button =&gt; {
@@ -5204,7 +5204,7 @@ updateAllMrVisibility();
   .visions-layout { --mr-number-width:34px; --mr-rank-width:44px; --mr-tag-width:48px; padding-top:52px; }
   body:has(&gt; .page-nav) { height:auto; min-height:100%; overflow:auto; }
   body:has(&gt; .page-nav) .page-content { flex:none; }
-  body:has(&gt; .page-nav) .page-nav { position:static; }
+  body:has(&gt; .page-nav) .page-nav { position:sticky; top:0; z-index:100; }
   body:has(&gt; .page-nav) .page-frame { height:100dvh; }
 
   .visions-layout &gt; .roster-stack { max-height:calc(var(--mobile-viewport-height, 100dvh) * .38); }
@@ -5322,13 +5322,20 @@ function installMobileMenu(doc) {
   close.textContent = '關閉選單 ✕';
   dialog.append(close);
   layout.append(toggle, dialog);
+  let rosterScrollTop = 0;
+  function closeMenu() {
+    rosterScrollTop = roster.scrollTop;
+    dialog.close();
+  }
   toggle.addEventListener('click', () => {
     dialog.showModal();
+    roster.scrollTop = rosterScrollTop;
     toggle.setAttribute('aria-expanded', 'true');
   });
-  close.addEventListener('click', () => dialog.close());
+  close.addEventListener('click', closeMenu);
+  dialog.addEventListener('cancel', () => { rosterScrollTop = roster.scrollTop; });
   dialog.addEventListener('click', event => {
-    if (event.target === dialog || event.target.closest('.merged-character-option, .vision-option')) dialog.close();
+    if (event.target === dialog || event.target.closest('.merged-character-option, .vision-option')) closeMenu();
   });
   dialog.addEventListener('close', () => {
     toggle.setAttribute('aria-expanded', 'false');
